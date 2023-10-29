@@ -1,0 +1,6 @@
+[submodule "chatbot-ui"]
+	path = chatbot-ui
+	url = https://github.com/Apurer/chatbot-ui.git
+[submodule "LocalAI"]
+	path = LocalAI
+	url = https://github.com/Apurer/LocalAI.git
