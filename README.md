@@ -29,6 +29,78 @@ chmod +x deploy.sh
 ![Rozszerzenie **Continue** w Visual Studio Code marketplace](continue.PNG "Rozszerzenie **Continue** w Visual Studio Code marketplace")
 2. Skonfiguruj plik w lokalizacji ~/.continue/config.py na przykładzie pliku z folderu **continue**
 
+### Jak korzystać rozszerzenia **Continue** dla Visual Studio Code 
+"""
+To jest 2-minutowy samouczek.
+
+Zaprowadzi Cię przez podstawowe funkcje:
+1. Zadaj pytanie
+2. Edytuj kod
+3. Debugowanie
+
+Możesz albo:
+- postępować zgodnie z instrukcjami samodzielnie, albo
+- podążać za instrukcjami, klikając szare przyciski CodeLens powyżej linii, poczynając od "Rozpocznij Sekcję"
+"""
+
+#### region ———————————————————————————— Część 1: Zadaj pytanie o kod [⌘ M] ————————————————————————————
+
+"""Krok 1: Zaznacz poniższą funkcję"""
+
+def tajemnicza_funkcja(x):
+    for i in range(len(x)):
+        for j in range(len(x) - 1):
+            if x[j] > x[j + 1]:
+                x[j], x[j + 1] = x[j + 1], x[j]
+
+    return x
+
+"""Krok 2: Użyj skrótu klawiszowego [⌘ M], aby
+zaznaczyć kod i włączyć pole wejściowe Continu"""
+
+"""Krok 3: Zadaj pytanie i naciśnij Enter"""
+
+#### endregion
+
+#### region ———————————————————————————————— Część 2: Edytuj kod [⌘ ⇧ M] ————————————————————————————————
+
+#### Krok 1: Zaznacz ten kod
+def tajemnicza_funkcja(x):
+    n = len(x)
+    for i in range(n):
+        swapped = False
+        for j in range(0, n - i - 1):
+            if x[j] > x[j + 1]:
+                x[j], x[j + 1] = x[j + 1], x[j]
+                swapped = True
+        if swapped == False:
+            break
+    return x
+
+"""Krok 2: Użyj skrótu klawiszowego [⌘ ⇧ M], aby
+zaznaczyć kod i przełączyć polecenie /edit"""
+
+"""Krok 3: Poproś o edycję i naciśnij Enter"""
+
+"""Krok 4: Użyj skrótów klawiszowych, aby
+zaakceptować [⌘ ⇧ ↵] lub odrzucić [⌘ ⇧ ⌫] edycję"""
+
+#### endregion
+
+#### region ————————————————————————————— Część 3: Debugowanie automatyczne [⌘ ⇧ R] ——————————————————————————
+
+"""Krok 1: Uruchom ten plik Pythona"""
+
+def drukuj_sumę(lista_do_druku):
+    print(sum(lista_do_druku))
+
+"""Krok 2: Użyj skrótu klawiszowego [⌘ ⇧ R]
+do automatycznego debugowania błędu"""
+drukuj_sumę(["a", "b", "c"])
+
+#### endregion
+
+
 ## Wynik benchmarku inferencji modelu na CPU i GPU
 
 ### CPU, model codellama-13b.Q4_K_M.gguf 
@@ -71,4 +143,5 @@ chmod +x deploy.sh
 | Czas ogólny       | 1026.54   | Całkowity czas oceny   | 137.36                  |
 | Całkowity czas    | 1135.82   | Całkowity czas działania| -                      |
 
+### Test inferencji modelu luna-llama2 na CPU za pomocą zapytań w curl
 ![Test inferencji modelu luna-llama2 na CPU za pomocą zapytań w curl](benchmark-luna-llama2-cpu.PNG "Test inferencji modelu luna-llama2 na CPU za pomocą zapytań w curl")
