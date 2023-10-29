@@ -42,6 +42,7 @@ Zaprowadzi Cię przez podstawowe funkcje:
 
 ##### Krok 1: Zaznacz poniższą funkcję
 
+```python
 def tajemnicza_funkcja(x):
     for i in range(len(x)):
         for j in range(len(x) - 1):
@@ -49,6 +50,7 @@ def tajemnicza_funkcja(x):
                 x[j], x[j + 1] = x[j + 1], x[j]
 
     return x
+```
 
 ##### Krok 2: Użyj skrótu klawiszowego [⌘ M], aby zaznaczyć kod i włączyć pole wejściowe Continu
 
@@ -73,12 +75,12 @@ def tajemnicza_funkcja(x):
             break
     return x
 ```
+
 ##### Krok 2: Użyj skrótu klawiszowego [⌘ ⇧ M], aby zaznaczyć kod i przełączyć polecenie /edit
 
 ##### Krok 3: Poproś o edycję i naciśnij Enter
 
 ##### Krok 4: Użyj skrótów klawiszowych, aby zaakceptować [⌘ ⇧ ↵] lub odrzucić [⌘ ⇧ ⌫] edycję
-
 
 #### Część 3: Debugowanie automatyczne [⌘ ⇧ R]
 
