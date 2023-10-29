@@ -30,7 +30,7 @@ chmod +x deploy.sh
 2. Skonfiguruj plik w lokalizacji ~/.continue/config.py na przykładzie pliku z folderu **continue**
 
 ### Jak korzystać rozszerzenia **Continue** dla Visual Studio Code 
-"""
+
 To jest 2-minutowy samouczek.
 
 Zaprowadzi Cię przez podstawowe funkcje:
@@ -38,14 +38,9 @@ Zaprowadzi Cię przez podstawowe funkcje:
 2. Edytuj kod
 3. Debugowanie
 
-Możesz albo:
-- postępować zgodnie z instrukcjami samodzielnie, albo
-- podążać za instrukcjami, klikając szare przyciski CodeLens powyżej linii, poczynając od "Rozpocznij Sekcję"
-"""
+#### Część 1: Zadaj pytanie o kod [⌘ M]
 
-#### region ———————————————————————————— Część 1: Zadaj pytanie o kod [⌘ M] ————————————————————————————
-
-"""Krok 1: Zaznacz poniższą funkcję"""
+##### Krok 1: Zaznacz poniższą funkcję
 
 def tajemnicza_funkcja(x):
     for i in range(len(x)):
@@ -55,16 +50,17 @@ def tajemnicza_funkcja(x):
 
     return x
 
-"""Krok 2: Użyj skrótu klawiszowego [⌘ M], aby
-zaznaczyć kod i włączyć pole wejściowe Continu"""
+##### Krok 2: Użyj skrótu klawiszowego [⌘ M], aby zaznaczyć kod i włączyć pole wejściowe Continu
 
-"""Krok 3: Zadaj pytanie i naciśnij Enter"""
+##### Krok 3: Zadaj pytanie i naciśnij Enter
 
 #### endregion
 
-#### region ———————————————————————————————— Część 2: Edytuj kod [⌘ ⇧ M] ————————————————————————————————
+#### Część 2: Edytuj kod [⌘ ⇧ M]
 
-#### Krok 1: Zaznacz ten kod
+##### Krok 1: Zaznacz ten kod
+
+```python
 def tajemnicza_funkcja(x):
     n = len(x)
     for i in range(n):
@@ -76,30 +72,28 @@ def tajemnicza_funkcja(x):
         if swapped == False:
             break
     return x
+```
+##### Krok 2: Użyj skrótu klawiszowego [⌘ ⇧ M], aby zaznaczyć kod i przełączyć polecenie /edit
 
-"""Krok 2: Użyj skrótu klawiszowego [⌘ ⇧ M], aby
-zaznaczyć kod i przełączyć polecenie /edit"""
+##### Krok 3: Poproś o edycję i naciśnij Enter
 
-"""Krok 3: Poproś o edycję i naciśnij Enter"""
+##### Krok 4: Użyj skrótów klawiszowych, aby zaakceptować [⌘ ⇧ ↵] lub odrzucić [⌘ ⇧ ⌫] edycję
 
-"""Krok 4: Użyj skrótów klawiszowych, aby
-zaakceptować [⌘ ⇧ ↵] lub odrzucić [⌘ ⇧ ⌫] edycję"""
 
-#### endregion
+#### Część 3: Debugowanie automatyczne [⌘ ⇧ R]
 
-#### region ————————————————————————————— Część 3: Debugowanie automatyczne [⌘ ⇧ R] ——————————————————————————
+##### Krok 1: Uruchom ten plik Pythona
 
-"""Krok 1: Uruchom ten plik Pythona"""
-
+```python
 def drukuj_sumę(lista_do_druku):
     print(sum(lista_do_druku))
+```
 
-"""Krok 2: Użyj skrótu klawiszowego [⌘ ⇧ R]
-do automatycznego debugowania błędu"""
+##### Krok 2: Użyj skrótu klawiszowego [⌘ ⇧ R] do automatycznego debugowania błędu
+
+```python
 drukuj_sumę(["a", "b", "c"])
-
-#### endregion
-
+```
 
 ## Wynik benchmarku inferencji modelu na CPU i GPU
 
