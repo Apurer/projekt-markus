@@ -23,11 +23,11 @@ chmod +x deploy.sh
 ./deploy.sh
 ```
 
-### Konfiguracja rozszerzenia "Continue" dla Visual Studio Code 
+### Konfiguracja rozszerzenia **Continue** dla Visual Studio Code 
 
 1. Zainstaluj plugin continue z Visual Studio Code marketplace
-![Rozszerzenie "Continue" w Visual Studio Code marketplace](continue.PNG)
-2. Skonfiguruj plik w lokalizacji ~/.continue/config.py na przykładzie pliku z folderu "continue"
+![Rozszerzenie **Continue** w Visual Studio Code marketplace](continue.PNG "Rozszerzenie **Continue** w Visual Studio Code marketplace")
+2. Skonfiguruj plik w lokalizacji ~/.continue/config.py na przykładzie pliku z folderu **continue**
 
 ## Wynik benchmarku inferencji modelu na CPU i GPU
 
@@ -71,4 +71,4 @@ chmod +x deploy.sh
 | Czas ogólny       | 1026.54   | Całkowity czas oceny   | 137.36                  |
 | Całkowity czas    | 1135.82   | Całkowity czas działania| -                      |
 
-![Test inferencji modelu luna-llama2 na CPU za pomocą zapytań w curl](benchmark-luna-llama2-cpu.PNG)
+![Test inferencji modelu luna-llama2 na CPU za pomocą zapytań w curl](benchmark-luna-llama2-cpu.PNG "Test inferencji modelu luna-llama2 na CPU za pomocą zapytań w curl")
