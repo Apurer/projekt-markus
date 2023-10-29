@@ -56,8 +56,6 @@ def tajemnicza_funkcja(x):
 
 ##### Krok 3: Zadaj pytanie i naciśnij Enter
 
-#### endregion
-
 #### Część 2: Edytuj kod [⌘ ⇧ M]
 
 ##### Krok 1: Zaznacz ten kod
